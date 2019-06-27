@@ -10,12 +10,12 @@ print(aRandomNumber)
 guess = input("Guess a number between 1 and 20 (inclusive): ")
 while (guess != aRandomNumber):
     guess = int(guess)
-    if not guess.isnumeric():
-	    print("That's not a positive whole number, try again!")
-    elif (guess < aRandomNumber):
-            print ('higher!')
+    if (guess < aRandomNumber):
+        print ('higher!')
+        guess = input('guess another number!')
     elif (guess > aRandomNumber):
-            print ('lower!')
+        print ('lower!')
+        guess = input('guess another number!')
     else:
-        print ('thats correct')
-guess = input('guess another number!')
+        print ('thats correct!')
+       
